@@ -1,10 +1,7 @@
 package com.geveit.s_svs.use_case.update_version;
 
-import com.geveit.s_svs.entity.Project;
 import com.geveit.s_svs.entity.Version;
-import com.geveit.s_svs.expection.ProjectNotFoundException;
 import com.geveit.s_svs.expection.VersionNotFoundException;
-import com.geveit.s_svs.repository.ProjectRepository;
 import com.geveit.s_svs.repository.VersionRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;

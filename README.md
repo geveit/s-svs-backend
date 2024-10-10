@@ -1,5 +1,5 @@
 # S-SVS - Simple Song Versioning System
 
 ## TODO
-* Exception handling
 * Auth
+* Integration tests
