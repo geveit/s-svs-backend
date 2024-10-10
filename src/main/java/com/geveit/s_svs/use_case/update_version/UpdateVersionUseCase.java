@@ -24,6 +24,6 @@ public class UpdateVersionUseCase {
 
         versionRepository.save(version);
 
-        return new UpdateVersionResponse(version.getProject().getId(), version.getId());
+        return new UpdateVersionResponse(version.getProject().getId(), version.getId(), version.getVersionNumber(), version.getTitle(), version.getLyrics(), version.getNotes());
     }
 }

@@ -19,8 +19,8 @@ public class CreateProjectUseCase {
         Project project = Project.builder().title(request.title()).versions(new ArrayList<>()).build();
         Version version = Version.builder().versionNumber(1).build();
         project.getVersions().add(version);
-        projectRepository.save(project);
+        Project newProject = projectRepository.save(project);
 
-        return new CreateProjectResponse(project.getId(), version.getId(), project.getTitle(), project.getCreatedAt());
+        return new CreateProjectResponse(newProject.getId(), newProject.getId(), newProject.getTitle(), newProject.getCreatedAt());
     }
 }

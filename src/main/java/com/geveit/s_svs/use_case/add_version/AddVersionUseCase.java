@@ -25,8 +25,8 @@ public class AddVersionUseCase {
 
         version.setProject(project);
 
-        versionRepository.save(version);
+        Version newVersion = versionRepository.save(version);
 
-        return new AddVersionResponse(project.getId(), version.getId());
+        return new AddVersionResponse(project.getId(), newVersion.getId());
     }
 }
